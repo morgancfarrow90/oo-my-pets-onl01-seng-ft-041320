@@ -60,6 +60,7 @@ end
 
 def sell_pets
   self.cats.map {|cat| cat.mood = "nervous"}
+  self.cats.map {|cat| cat.owner = nil}
   self.dogs.map {|dog| dog.mood = "nervous"}
   
 end
