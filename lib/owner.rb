@@ -62,7 +62,7 @@ end
 def sell_pets
   self.pets.map {|pet_type, data|
   data.each.map {|attribute, value|
-  mood = "nervous"
-
+  mood = "nervous"}}
+end
 end
   
