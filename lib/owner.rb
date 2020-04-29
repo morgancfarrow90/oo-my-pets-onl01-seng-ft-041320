@@ -51,15 +51,12 @@ def buy_dog(name)
   @pets[:dogs] << new_dog
 end
 
-def walk_dogs
-    @pets.collect do |species, instances|
-      if species == :dogs
-        instances.collect do |dog|
-          dog.mood = "happy"
-        end
-      end
-    end
-  end
+def walk_dogs 
+    @pets[:dogs].each do |walked| 
+      mood = "happy"
+    end 
+    
+  end 
 
 def feed_cats
   self.cats.map {|cat| cat.mood = "happy"}
