@@ -60,7 +60,8 @@ def feed_cats
 end
 
 def sell_pets
-  self.pets.map {|
+  self.pets.map {|pet_type, data|}
+  
 
 end
   
