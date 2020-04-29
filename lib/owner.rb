@@ -64,5 +64,4 @@ def sell_pets
   self.dogs.map {|dog| dog.mood = "nervous"}
 end
 end
-end
   
