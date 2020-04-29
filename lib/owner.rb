@@ -52,9 +52,7 @@ def buy_dog(name)
 end
 
 def walk_dogs 
-    @pets[:dogs].each do |walked| 
-      mood = "happy"
-    end 
+    self.dogs.map {|dog| dog.mood = "happy}"
   end 
 
 def feed_cats
