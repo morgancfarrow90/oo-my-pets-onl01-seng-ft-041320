@@ -33,7 +33,6 @@ def self.reset_all
 end
 
 def cats
-  
   Cat.all.select {|cat| cat.owner == self}
 end 
 
@@ -62,7 +61,7 @@ end
 def sell_pets
   self.cats.map {|cat| cat.mood = "nervous"}
   self.dogs.map {|dog| dog.mood = "nervous"}
-  @pets.clear
+  
 end
 end
   
