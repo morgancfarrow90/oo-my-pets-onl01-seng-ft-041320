@@ -61,7 +61,7 @@ def walk_dogs
   end
 
 def feed_cats
-  binding pry
+  binding pry 
   self.pets[:cats].map {|cat| cat.mood = "happy"}
 end
 
