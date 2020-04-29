@@ -63,7 +63,10 @@ def sell_pets
   self.cats.map {|cat| cat.owner = nil}
   self.dogs.map {|dog| dog.mood = "nervous"}
   self.dogs.map {|dog| dog.owner = nil}
-  
+end
+
+def list_pets
+  puts "I have #{owner.dogs.count} dog(s), and #{owner.cats.count} cat(s)."
 end
 end
   
