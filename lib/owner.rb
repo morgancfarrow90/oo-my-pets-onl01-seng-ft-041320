@@ -32,7 +32,8 @@ def self.reset_all
   @@count = 0
 end
 
-def cats 
+def cats
+  
   Cat.all.select {|cat| cat.owner == self}
 end 
 
@@ -61,8 +62,7 @@ def walk_dogs
   end
 
 def feed_cats
-  binding pry 
-  self.pets[:cats].map {|cat| cat.mood = "happy"}
+  self.cats.map {|cat| cat.mood = "happy"}
 end
 
 end
